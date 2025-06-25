@@ -4,7 +4,7 @@
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/models/**",
+      "source": "/models/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -13,7 +13,7 @@
       ]
     },
     {
-      "source": "/js/**",
+      "source": "/js/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "source": "/textures/**",
+      "source": "/textures/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(gltf|glb|hdr|jpg|png|webp))",
+      "source": "/(.*)\\.(gltf|glb|hdr|jpg|png|webp)$",
       "headers": [
         {
           "key": "Cache-Control",
